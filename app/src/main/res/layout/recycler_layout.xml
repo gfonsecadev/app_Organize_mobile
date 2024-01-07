@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/recyclerDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:textSize="25sp"
+        android:padding="6dp"
+        android:text="Descrição" />
+
+    <TextView
+        android:id="@+id/recyclerValor"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:gravity="end"
+        android:paddingEnd="15dp"
+        android:padding="6dp"
+        android:layout_weight="1"
+        android:text="Valor"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/recyclerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="Tipo"
+        android:textSize="18dp">
+
+    </TextView>
+
+</LinearLayout>

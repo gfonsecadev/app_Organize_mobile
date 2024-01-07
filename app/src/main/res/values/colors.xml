@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="primaryDespeza">#F16565</color>
+    <color name="primaryVariantDespeza">#B83C3C</color>
+    <color name="secondaryDespeza">#9A0A0A</color>
+
+    <color name="primaryReceita">#F895EC95</color>
+    <color name="primaryVariantReceita">#6E9F4B</color>
+    <color name="secondaryReceita">#307009</color>
+</resources>

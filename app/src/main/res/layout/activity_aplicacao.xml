@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activies.AplicacaoActivity"
+    >
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingClass,SpeakableTextPresentCheck">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabReceita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            app:fab_size="mini"
+            android:onClick="adicionarReceita"
+            app:fab_colorNormal="@color/secondaryReceita"
+            app:fab_colorPressed="@color/primaryVariantReceita"
+            app:fab_label="Adicionar receita"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="OnClick">
+
+        </com.github.clans.fab.FloatingActionButton>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabDespeza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_size="mini"
+            android:layout_marginEnd="24dp"
+            android:onClick="adicionarDespesa"
+            app:fab_label="Adicionar despesa"
+            app:fab_colorNormal="@color/secondaryDespeza"
+            app:fab_colorPressed="@color/primaryDespeza"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="OnClick">
+
+        </com.github.clans.fab.FloatingActionButton>
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:background="#07B1A0"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carregando..."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textValor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 0,00"
+            android:textColor="@color/white"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Saldo atual"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textData" />
+
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Abril 2022"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/buttomAntes"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:onClick="dataAnte"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toStartOf="@+id/textData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageButton
+        android:id="@+id/buttomDepois"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:filterTouchesWhenObscured="true"
+        android:onClick="dataPoste"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        android:src="@drawable/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textData"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
