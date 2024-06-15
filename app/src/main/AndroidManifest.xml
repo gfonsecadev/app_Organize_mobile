@@ -12,7 +12,7 @@
         <activity
             android:name=".activies.DespezaActivity"
             android:exported="false"
-            android:theme="@style/despesaTheme"/>
+            android:theme="@style/Theme.despesaTheme"/>
         <activity
             android:name=".activies.ReceitaActivity"
             android:exported="false"
@@ -28,6 +28,7 @@
             android:exported="false" />
         <activity
             android:name=".activies.MainActivity"
+            android:theme="@style/Theme.styleSlideMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

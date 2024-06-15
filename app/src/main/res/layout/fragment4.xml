@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Use no seu smartphone ou acessando \n o Organizze pelo site"
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/LittleTextSlide"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

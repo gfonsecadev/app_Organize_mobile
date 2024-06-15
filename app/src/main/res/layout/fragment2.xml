@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Categorizando seus lançamentos e \n controlando cada centavo."
-        android:textColor="@android:color/darker_gray"
+        android:textColor="@color/LittleTextSlide"
         app:layout_constraintBottom_toBottomOf="parent"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"

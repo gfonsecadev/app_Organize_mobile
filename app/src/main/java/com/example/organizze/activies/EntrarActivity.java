@@ -32,7 +32,6 @@ public class EntrarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entrar);
 
-        getSupportActionBar().setTitle("Entrar");
         email=findViewById(R.id.editTextEmail);
         senha=findViewById(R.id.editTextTeSenha);
         buttonEntrar=findViewById(R.id.buttonEntrar);

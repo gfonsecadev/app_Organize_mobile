@@ -1,8 +1,10 @@
 package com.example.organizze.activies;
 
 import android.content.Intent;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 
 import com.example.organizze.R;
 import com.example.organizze.autentificacao.Autentificar;
@@ -19,14 +21,15 @@ public class MainActivity extends IntroActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
 
-
         setButtonBackVisible(false);
         setButtonNextVisible(false);
-        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment1).background(R.color.white).build());
-        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment2).background(R.color.white).build());
-        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment3).background(R.color.white).build());
-        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment4).background(R.color.white).build());
-        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment5).background(R.color.white).canGoForward(false).build());
+
+
+        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment1).background(R.color.mainColorSlide).build());
+        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment2).background(R.color.mainColorSlide).build());
+        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment3).background(R.color.mainColorSlide).build());
+        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment4).background(R.color.mainColorSlide).build());
+        addSlide(new FragmentSlide.Builder().fragment(R.layout.fragment5).background(R.color.mainColorSlide).canGoForward(false).build());
 
     }
 

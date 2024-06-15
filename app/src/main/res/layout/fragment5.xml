@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:textColor="#cccccc"
+        android:textColor="@color/LittleTextSlide"
         android:text="Junte-se a mais de meio milhão de pessoas \nconectadas e comece já!"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         android:gravity="center"
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
 
         android:text="Já tenho uma conta"
-        android:textColor="#cccccc"
+        android:textColor="@color/LittleTextSlide"
         android:onClick="entrar_conta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
